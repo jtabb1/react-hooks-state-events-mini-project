@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import CategoryFilter from "./CategoryFilter";
 import NewTaskForm from "./NewTaskForm";
 import TaskList from "./TaskList";
-import { CATEGORIES, TASKS } from "../data";
 
+import { CATEGORIES, TASKS } from "../data";
 
 function App() {
   const [tasks, setTasks] = useState(TASKS);
@@ -20,7 +20,7 @@ function App() {
   const visibleTasks = tasks.filter(
     (task) => category === "All" || task.category === category
   );
-  
+
   return (
     <div className="App">
       <h2>My tasks</h2>

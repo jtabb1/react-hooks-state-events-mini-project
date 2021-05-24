@@ -10,7 +10,7 @@ function NewTaskForm({ onTaskFormSubmit, categories }) {
     setText("");
     setCategory("Code");
   }
-  
+
   return (
     <form className="new-task-form" onSubmit={handleSubmit}>
       <label>
